@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container  w-25 h-85">
+            <h2>Temperature <span>Converter</span> :</h2>
+            <input type="number" value="0" name="tempInput" id="tempInput">
+            <div class="tempChosen">
+                <input type="radio" name="temp" id="CtoF">
+                <label for="CtoF">Celsius → Fahrenheit</label>
+                <br>
+                <input type="radio" name="temp" id="FtoC">
+                <label for="FtoC">Fahrenheit → Celsius</label>
+                <hr>
+                <input type="radio" name="temp" id="CtoK">
+                <label for="CtoK">Celsius → Kelvin</label>
+                <br>
+                <input type="radio" name="temp" id="KtoC">
+                <label for="KtoC">Kelvin → Celsius</label>
+                <hr>
+                <input type="radio" name="temp" id="FtoK">
+                <label for="FtoK">Fahrenheit → Kelvin</label>
+                <br>
+                <input type="radio" name="temp" id="KtoF">
+                <label for="KtoF">Kelvin → Fahrenheit</label>
+            </div>
+            <button type="button" onclick="submit()" class="submitBtn mb-3">Submit</button>
+            <p id="display"></p>
+        </div>
+        <p id="tag">Developped by The Pix.</p>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
